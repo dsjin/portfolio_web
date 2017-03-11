@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <title>DSJIN!</title>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section textlogo" id="section1">
+      <h1>DSJIN!</h1>
+      <h5>and friends</h5>
+      <img class="facebook facebook-animation" src="facebook-icon.png" alt="facebook">
+    </div>
+    <div class="section textlogo" id="section2">
+      <h1>DSJIN!</h1>
+      <h5>and friends</h5>
+      <img id="facebook" class="facebook" src="facebook-icon.png" alt="facebook">
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.fullPage.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        'afterLoad': function(anchorLink, index){
+  					if(index == 2){
+  						$('#facebook').addClass('facebook-animation');
+  					}
+  				}
+      });
+    });
+  </script>
+</body>
+</html>
