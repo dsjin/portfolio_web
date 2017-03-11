@@ -2,40 +2,9 @@
   DSJIN's Profile Website CSS
 */
 @import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('animate.css');
 body{
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-}
-@keyframes zoom{
-  0%{
-    transform: scale(.0);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-@-webkit-keyframes zoom{
-  0%{
-    transform: scale(.0);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-@-moz-keyfreams zoom{
-  0%{
-    transform: scale(.0);
-  }
-  100%{
-    transform: scale(1);
-  }
-}
-@keyframes facebook{
-  0%{
-    transform: scale(0) rotate(180deg);
-  }
-  100%{
-    transform: scale(1) rotate(0deg);
-  }
 }
 .textlogo{
   margin: auto;
@@ -83,14 +52,14 @@ body{
   -moz-animation-delay: 1s;
   animation-delay: 1s;
 }
-.facebook{
-  transform: scale(0);
+.arrow{
   width: 4%;
 }
-.facebook-animation{
-  -webkit-animation-name: facebook;
-  -moz-animation-name:facebook;
-  animation-name:facebook;
+.arrow-animation{
+  transform: scale(0);
+  -webkit-animation-name: arrow;
+  -moz-animation-name:arrow;
+  animation-name:arrow;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -101,4 +70,20 @@ body{
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   animation-delay: 2.5s;
+}
+.up-and-down{
+  -webkit-animation-name: upanddown;
+  -moz-animation-name:upanddown;
+  animation-name:upanddown;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 4s;
 }

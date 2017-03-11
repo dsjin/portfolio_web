@@ -1,0 +1,40 @@
+@keyframes zoom{
+  0%{
+    transform: scale(.0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes zoom{
+  0%{
+    transform: scale(.0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@-moz-keyfreams zoom{
+  0%{
+    transform: scale(.0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+@keyframes arrow{
+  0%{
+    transform: scale(0) rotate(180deg);
+  }
+  100%{
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes upanddown {
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
