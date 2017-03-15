@@ -58,9 +58,9 @@ body{
 }
 .arrow-animation{
   transform: scale(0);
-  -webkit-animation-name: arrow;
-  -moz-animation-name:arrow;
-  animation-name:arrow;
+  -webkit-animation-name: spin;
+  -moz-animation-name:spin;
+  animation-name:spin;
   -webkit-animation-duration: 1.5s;
   -moz-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -88,10 +88,54 @@ body{
   -moz-animation-delay: 3s;
   animation-delay: 4s;
 }
-
+.fade-left{
+  -webkit-animation-name: fadeleft;
+  -moz-animation-name:fadeleft;
+  animation-name:fadeleft;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.img-spin{
+  -webkit-animation-name: spin;
+  -moz-animation-name:spin;
+  animation-name:spin;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.infomation-zoom{
+  -webkit-animation-name: zoom;
+  -moz-animation-name:zoom;
+  animation-name:zoom;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .profile{
   padding-left: 28%;
   padding-right: 10%
+}
+#profile-detail{
+  margin-top:10%
 }
 #profile-title{
   position: absolute;
@@ -100,6 +144,7 @@ body{
   top: 0;
   bottom: 0;
   text-align: center;
+  opacity: 0;
 }
 #profile-title h2{
   font-family: 'Barrio', cursive;
@@ -110,6 +155,8 @@ body{
   width: 25%
 }
 #img-profile{
+  transform: scale(0);
+  padding-top: 30px;
   float: left;
   display: inline-block;
   position: relative;
@@ -126,8 +173,10 @@ body{
   width: 70%;
   font-family: 'Pattaya', sans-serif;
   font-size: 2em;
-  padding: 40px 0px 20px 20px;
+  padding: 0px 0px 20px 20px;
 }
 #information p{
+  transform: scale(0);
   margin:  0;
+  padding-bottom: 5px
 }

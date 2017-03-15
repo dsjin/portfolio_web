@@ -22,7 +22,7 @@
     transform: scale(1);
   }
 }
-@keyframes arrow{
+@keyframes spin{
   0%{
     transform: scale(0) rotate(180deg);
   }
@@ -36,5 +36,15 @@
   }
   100%{
     transform: translateY(0px);
+  }
+}
+@keyframes fadeleft {
+  0%{
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
   }
 }

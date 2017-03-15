@@ -29,8 +29,11 @@
         </div>
         <div id="information">
           <p>ชื่อ : ธัชกร จอมอุตม์</p>
+          <p>สัญชาติ/เชื้อชาติ : ไทย</p>
           <p>วัน/เดือน/ปี เกิด ：5/11/2538</p>
-          <p>รักอ.ที่สุดครับ ขอ 75 คะแนนเต็มนะครับ</p>
+          <p>ศาสนา : พุทธ</p>
+          <p>เลขที่บัตรประชาชน : 1100600319374</p>
+          <p>ที่อยู่ : 44/22 หมู่บ้านศุชญา 2 นิมิตใหม่ มีนบุรี กรุงเทพมหานคร 10510</p>
         </div>
       </div>
       <!--
@@ -48,7 +51,14 @@
       $('#fullpage').fullpage({
         'afterLoad': function(anchorLink, index){
   					if(index == 2){
-  						//$('#facebook').addClass('facebook-animation');
+  						$('#profile-title').addClass('fade-left');
+              $('#img-profile').addClass('img-spin');
+              $('#information p:nth-child(1)').addClass('infomation-zoom').css({'animation-delay':'2s'})
+              $('#information p:nth-child(2)').addClass('infomation-zoom').css({'animation-delay':'3.5s'})
+              $('#information p:nth-child(3)').addClass('infomation-zoom').css({'animation-delay':'5s'})
+              $('#information p:nth-child(4)').addClass('infomation-zoom').css({'animation-delay':'6.5s'})
+              $('#information p:nth-child(5)').addClass('infomation-zoom').css({'animation-delay':'8s'})
+              $('#information p:nth-child(6)').addClass('infomation-zoom').css({'animation-delay':'9.5s'})
   					}
   				}
       });
