@@ -3,6 +3,7 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Barrio');
 @import url('https://fonts.googleapis.com/css?family=Pattaya');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('animate.css');
 body{
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
@@ -137,7 +138,7 @@ body{
 #profile-detail{
   margin-top:10%
 }
-#profile-title{
+#profile-title , #education-title{
   position: absolute;
   left: 0;
   right: 0;
@@ -146,7 +147,7 @@ body{
   text-align: center;
   opacity: 0;
 }
-#profile-title h2{
+#profile-title h2 , #education-title h2{
   font-family: 'Barrio', cursive;
   font-size: 5em;
   text-decoration: underline;
@@ -162,7 +163,7 @@ body{
   position: relative;
   width: 100%;
 }
-#img-profile img{
+#img-profile img,.education-containner img{
   max-width: 100%;
   border-radius: 10px;
 }
@@ -178,5 +179,27 @@ body{
 #information p{
   transform: scale(0);
   margin:  0;
+  padding-bottom: 5px
+}
+.education{
+  padding-left: 13%;
+  padding-right: 10%
+}
+.education-containner{
+  float: left;
+  width: 30%;
+  margin-right: 3.3%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10%
+}
+.education-containner img{
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  padding-bottom: 30px;
+}
+.education-containner p{
+  margin: 0;
   padding-bottom: 5px
 }
