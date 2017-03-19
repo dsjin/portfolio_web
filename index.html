@@ -71,6 +71,23 @@
         </div>
       </div>
     </div>
+    <div class="section activities" id="section4">
+      <div id="activities-title">
+        <h2>Activities</h2>
+      </div>
+      <div class="activities-detail slide">
+          <img src="it3k13.jpg" alt="IT3K 13" title="IT3K 13 | Original photo By อิจิ">
+          <figcaption>IT3K 13 | สันทนาการ</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="it3k13.jpg" alt="IT3K 13 | Original photo By อิจิ">
+          <figcaption>IT3K 13 | สันทนาการ</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="it3k13.jpg" alt="IT3K 13 | Original photo By อิจิ">
+          <figcaption>IT3K 13 | สันทนาการ</figcaption>
+      </div>
+    </div>
       <!--
       <div id="profile-detail" class="slide">
         <div id="img-profile">
@@ -83,6 +100,8 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
+        slidesNavigation: true,
+        controlArrows: false,
         'afterLoad': function(anchorLink, index){
   					if(index == 2){
   						$('#profile-title').addClass('fade-left');
@@ -96,6 +115,10 @@
   					}
             if(index == 3){
               $('#education-title').addClass('fade-left');
+            }
+            if(index == 4){
+              $('#activities-title').addClass('fade-left');
+              $('.activities-detail').addClass('infomation-zoom').css({'animation-delay':'0.5s'})
             }
   				}
       });
