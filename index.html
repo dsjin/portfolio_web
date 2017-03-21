@@ -30,7 +30,7 @@
       <div id="profile-detail">
           <div id="img-containner">
             <div id="img-profile">
-              <img src="profile.jpg" alt="profile">
+              <img src="profile1.jpg" alt="profile">
             </div>
           </div>
           <div id="information">
@@ -76,16 +76,40 @@
         <h2>Activities</h2>
       </div>
       <div class="activities-detail slide">
+          <img src="ktb.jpg" alt="KTB" title="KTB PromptPay">
+          <figcaption>KTB | PromptPay Section | Part-time</figcaption>
+      </div>
+      <div class="activities-detail slide">
           <img src="it3k13.jpg" alt="IT3K 13" title="IT3K 13 | Original photo By อิจิ">
           <figcaption>IT3K 13 | สันทนาการ</figcaption>
       </div>
       <div class="activities-detail slide">
-          <img src="it3k13.jpg" alt="IT3K 13 | Original photo By อิจิ">
-          <figcaption>IT3K 13 | สันทนาการ</figcaption>
+          <img src="fit12.jpg" alt="FIT 12" title="FIT 12">
+          <figcaption>FIT 12 | สันทนาการ</figcaption>
       </div>
       <div class="activities-detail slide">
-          <img src="it3k13.jpg" alt="IT3K 13 | Original photo By อิจิ">
-          <figcaption>IT3K 13 | สันทนาการ</figcaption>
+          <img src="byenior9.jpg" alt="Byenior 9">
+          <figcaption>Byenior 9 | ร่วมกิจกรรม</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="bit11.jpg" alt="BIT 11">
+          <figcaption>BIT 11 | ร่วมกิจกรรม</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="it3k12.jpg" alt="IT3K 12">
+          <figcaption>IT3K 12 | สันทนาการ</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="tobeit.jpg" alt="To Be IT 58">
+          <figcaption>TOBEIT 58 | ฝ่ายสวัสดิการ</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="itcamp12.jpg" alt="ITCAMP 13" title="ITCAMP 13 | Original photo By Sakan">
+          <figcaption>ITCAMP 12 | สันทนาการ/พี่บ้าน</figcaption>
+      </div>
+      <div class="activities-detail slide">
+          <img src="openhouse2014.jpg" alt="Open House 2014" title="Open House 2014">
+          <figcaption>OPENHOUSE 2014 | ฝ่าย Debate</figcaption>
       </div>
     </div>
       <!--
@@ -102,6 +126,25 @@
       $('#fullpage').fullpage({
         slidesNavigation: true,
         controlArrows: false,
+        easingcss3: 'cubic-bezier(0.770, 0.000, 0.175, 1.000)',
+        scrollingSpeed: 1200,
+        anchors:['mainPage', 'profilePage', 'educationPage','activitiesPage'],
+        recordHistory: true,
+        onLeave: function(index, nextIndex, direction){
+          if (index==1) {
+            jQuery(document.body).animate({opacity:1}, 500, function(){
+                $(document.body).css('background-image', 'linear-gradient(120deg, #89f7fe 0%, #ffffff 100%)');
+            });
+          }else if(index == 2){
+            jQuery(document.body).animate({opacity:1}, 500, function(){
+                $(document.body).css('background-image', 'linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%)');
+            });
+          }else if(index == 3 && direction == 'up'){
+            jQuery(document.body).animate({opacity:1}, 500, function(){
+                $(document.body).css('background-image', 'linear-gradient(120deg, #89f7fe 0%, #ffffff 100%)');
+            });
+          }
+        },
         'afterLoad': function(anchorLink, index){
   					if(index == 2){
   						$('#profile-title').addClass('fade-left');
@@ -118,9 +161,10 @@
             }
             if(index == 4){
               $('#activities-title').addClass('fade-left');
-              $('.activities-detail').addClass('infomation-zoom').css({'animation-delay':'0.5s'})
+              $('.activities-detail').addClass('infomation-zoom').css({'animation-delay':'0.5s'});
+              $('.fp-slidesNav').addClass('infomation-zoom').css({'animation-delay':'0.5s'});
             }
-  				}
+  				},
       });
     });
   </script>

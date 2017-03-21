@@ -1,12 +1,15 @@
 /*
   DSJIN's Profile Website CSS
 */
-@import url('https://fonts.googleapis.com/css?family=Barrio');
+/*@import url('https://fonts.googleapis.com/css?family=Barrio');*/
 @import url('https://fonts.googleapis.com/css?family=Pattaya');
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('animate.css');
 body{
   background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+
 }
 .textlogo{
   margin: auto;
@@ -15,13 +18,13 @@ body{
   right: 0;
   top: 0;
   bottom: 0;
-  font-family: 'Barrio', cursive;
   text-align: center;
 }
 .textlogo h1{
   font-size: 10em;
   display: block;
   margin: 0;
+  font-family: 'Monoton', cursive;
   -webkit-animation-name: zoom;
   -moz-animation-name:zoom;
   animation-name:zoom;
@@ -36,9 +39,11 @@ body{
   animation-delay: 0s;
 }
 .textlogo h5{
-  font-size: 5em;
+  font-size: 4em;
   display: block;
   margin: 0;
+  font-family: 'Ubuntu', cursive;
+  font-weight: 300;
   transform: scale(0.0);
   -webkit-animation-name: zoom;
   -moz-animation-name:zoom;
@@ -56,6 +61,7 @@ body{
 }
 .arrow{
   width: 4%;
+  margin-top: 20px;
 }
 .arrow-animation{
   transform: scale(0);
@@ -148,8 +154,8 @@ body{
   opacity: 0;
 }
 #profile-title h2 , #education-title h2 , #activities-title h2{
-  font-family: 'Barrio', cursive;
-  font-size: 5em;
+  font-family: 'Monoton', cursive;
+  font-size: 4em;
   text-decoration: underline;
 }
 #img-containner{
@@ -157,7 +163,7 @@ body{
 }
 #img-profile{
   transform: scale(0);
-  padding-top: 30px;
+  padding-top: 15px;
   float: left;
   display: inline-block;
   position: relative;
@@ -179,7 +185,7 @@ body{
 #information p{
   transform: scale(0);
   margin:  0;
-  padding-bottom: 5px
+  padding-bottom: 10px
 }
 .education{
   padding-left: 13%;
@@ -204,7 +210,7 @@ body{
   padding-bottom: 5px
 }
 .activities-detail{
-  padding-top: 1%;
+  padding-top: 0.5%;
   transform: scale(0);
 }
 .activities-detail figcaption{
@@ -216,5 +222,8 @@ body{
   display: block;
 }
 .activities-detail img {
-  width: 45%;
+  width: 40%;
+}
+.fp-slidesNav{
+  transform: scale(0) !important;
 }
