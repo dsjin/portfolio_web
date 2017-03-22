@@ -247,10 +247,10 @@ body{
   height: 400px
 }
 .img1{
-  background-image: url('../src/img/reservation.png');
+  background-image: url('../src/img/reservation.PNG');
 }
 .img2{
-  background-image: url('../src/img/port.png');
+  background-image: url('../src/img/port.PNG');
 }
 .balloon{
   margin-top: 10%;
