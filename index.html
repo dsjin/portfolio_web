@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/grid12.css">
   <link rel="stylesheet" href="css/main.css"/>
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
   <title>PORTFOLIO</title>
 </head>
 <body>
@@ -111,6 +112,10 @@
           <img src="src/img/openhouse2014.jpg" alt="Open House 2014" title="Open House 2014">
           <figcaption>OPENHOUSE 2014 | ฝ่าย Debate</figcaption>
       </div>
+      <div class="slide-detail slide">
+          <img src="src/img/itcamp10.jpg" alt="ITCAMP 10" title="ITCAMP 10">
+          <figcaption>ITCAMP 10 | น้องค่าย</figcaption>
+      </div>
     </div>
     <div class="section works" id="section5">
       <div id="works-title">
@@ -175,7 +180,7 @@
         <div class="row slide">
           <div class="col-md-6">
             <div class="img-con">
-              <img class="long" src="src/img/monexch.PNG" style="margin-top:5%">
+              <img class="long" src="src/img/monexch.PNG" style="margin-top:8%">
             </div>
           </div>
           <div class="col-md-6">
@@ -193,7 +198,7 @@
             </div>
           </div>
           <div class="col-md-6">
-                <div class="balloon" style="margin-top:15%">
+                <div class="balloon" style="margin-top:12%">
                   <h3>Website Portfolio</h3>
                   <p>ออกแบบเว็บไซต์ Portfolio</p>
                   <p>Pre Programming | ก่อนขึ้นปี 1</p>
@@ -205,8 +210,37 @@
       <div id="appendix-title">
         <h2>Appendix</h2>
       </div>
+      <div class="slide-detail-appendex slide" style="padding-top:1.2%">
+          <img src="src/img/ktbac.jpg" alt="KTB" title="KTB">
+          <figcaption>KTB | ใบประกาศนียบัตรเรียนดี</figcaption>
+      </div>
+      <div class="slide-detail-appendex slide" style="padding-top:1.2%">
+          <img src="src/img/aua.jpg" alt="AUA" title="AUA">
+          <figcaption>AUA Level 8</figcaption>
+      </div>
+      <div class="slide-detail-appendex slide" style="padding-top:1.2%">
+          <img src="src/img/ach2.PNG" alt="ITCAMP 10" title="ITCAMP 10">
+          <figcaption>ITCAMP 10</figcaption>
+      </div>
     </div>
     <div class="section contact" id="section7">
+      <div class="container">
+        <div class="row" style="transform:scale(1)">
+          <div class="col-md-12">
+            <h1>THANK YOU FOR WATCHING</h1>
+          </div>
+        </div>
+        <div class="row" style="transform:scale(1)">
+          <div class="col-md-12 contact-items">
+            <i class="fa fa-facebook-square fa-5x" aria-hidden="true"><span>fb.com/Dsjin.TJ</span></i>
+          </div>
+        </div>
+        <div class="row" style="transform:scale(1)">
+          <div class="col-md-12 contact-items">
+            <i class="fa fa-envelope fa-5x" aria-hidden="true"><span>57070053@kmitl.ac.th</span></i>
+          </div>
+        </div>
+      </div>
       <!--
       <div class="container">
         <div class="row" style="transform:scale(1)">
@@ -253,7 +287,7 @@
             jQuery(document.body).animate({opacity:1}, 500, function(){
                 $(document.body).css('background-image', 'linear-gradient(120deg, #89f7fe 0%, #ffffff 100%)');
             });*/
-            if (index==4) {
+            if (index==4 || index==5 || index==6) {
               jQuery('.fp-slidesNav').animate({opacity:1}, 500, function(){
                 $('.fp-slidesNav').removeClass('infomation-zoom');
               });
@@ -263,15 +297,16 @@
   					if(index == 2){
   						$('#profile-title').addClass('fade-left');
               $('#img-profile').addClass('img-spin');
-              $('#information p:nth-child(1)').addClass('infomation-zoom').css({'animation-delay':'2s'})
-              $('#information p:nth-child(2)').addClass('infomation-zoom').css({'animation-delay':'3.5s'})
-              $('#information p:nth-child(3)').addClass('infomation-zoom').css({'animation-delay':'5s'})
-              $('#information p:nth-child(4)').addClass('infomation-zoom').css({'animation-delay':'6.5s'})
-              $('#information p:nth-child(5)').addClass('infomation-zoom').css({'animation-delay':'8s'})
-              $('#information p:nth-child(6)').addClass('infomation-zoom').css({'animation-delay':'9.5s'})
+              $('#information p:nth-child(1)').addClass('infomation-zoom').css({'animation-delay':'2s'});
+              $('#information p:nth-child(2)').addClass('infomation-zoom').css({'animation-delay':'3.5s'});
+              $('#information p:nth-child(3)').addClass('infomation-zoom').css({'animation-delay':'5s'});
+              $('#information p:nth-child(4)').addClass('infomation-zoom').css({'animation-delay':'6.5s'});
+              $('#information p:nth-child(5)').addClass('infomation-zoom').css({'animation-delay':'8s'});
+              $('#information p:nth-child(6)').addClass('infomation-zoom').css({'animation-delay':'9.5s'});
   					}
             if(index == 3){
               $('#education-title').addClass('fade-left');
+              $('.education-containner').addClass('infomation-zoom').css({'animation-delay':'0.5s'});
             }
             if(index == 4){
               $('#activities-title').addClass('fade-left');
@@ -285,6 +320,8 @@
             }
             if(index == 6){
               $('#appendix-title').addClass('fade-left');
+              $('.slide-detail-appendex').addClass('infomation-zoom').css({'animation-delay':'0.5s'});
+              $('.fp-slidesNav').addClass('infomation-zoom').css({'animation-delay':'0.5s'});
             }
   				},
       });

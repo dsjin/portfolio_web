@@ -197,7 +197,8 @@ body{
   margin-right: 3.3%;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  margin-top: 10%
+  margin-top: 10%;
+  transform: scale(0);
 }
 .education-containner img{
   display: block;
@@ -209,15 +210,15 @@ body{
   margin: 0;
   padding-bottom: 5px
 }
-.slide-detail{
+.slide-detail , .slide-detail-appendex{
   padding-top: 0.5%;
   transform: scale(0);
 }
-.slide-detail figcaption{
+.slide-detail figcaption , .slide-detail-appendex figcaption{
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
-.slide-detail img{
+.slide-detail img , .slide-detail-appendex img{
   margin: 0 auto;
   display: block;
   width: 40%;
@@ -255,10 +256,13 @@ body{
 .balloon{
   margin-top: 10%;
   background-color: #FFD6A6;
-  width: 50%;
+  width: 60%;
   padding: 30px 10px 30px 10px;
   border-radius: 10px;
   font-family: 'Pattaya', sans-serif;
+}
+.balloon p{
+  font-size: 1.3em;
 }
 .works .row{
   padding-top: 0.5%
@@ -270,4 +274,21 @@ body{
 }
 .row{
   transform: scale(0);
+}
+.contact h1{
+  font-family: 'Ubuntu', cursive;
+  text-align: center;
+  font-size: 4em
+}
+.contact-items{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact i::before{
+  padding-right: 20px;
+}
+.contact span{
+  font-size: 0.5em;
+  vertical-align: middle;
+  font-family: 'Ubuntu', cursive;
 }
